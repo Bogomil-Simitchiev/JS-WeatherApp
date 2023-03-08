@@ -5,5 +5,16 @@
     border: 3px solid green;
     padding: 10px;
     text-align: center;
-    border: 3px solid green;
+}
+
+.container {
+    background-color: bisque;
+}
+
+#btn {
+    font-size: 15px;
+}
+
+#msg {
+    height: 40px;
 }
