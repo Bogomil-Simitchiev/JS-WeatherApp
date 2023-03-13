@@ -10,7 +10,6 @@ btnElement.addEventListener('click', (e) => {
         if (element.checked) {
 
             let degree = element.parentNode.querySelector('label').textContent;
-
             checkDataForTheCurrentCity(degree);
         }
     })
@@ -31,6 +30,7 @@ async function checkDataForTheCurrentCity(degree) {
                     let weatherDesc = data['weather'][0].description;
                     let icon = data['weather'][0].icon;
                     let windSpeed = data['wind'].speed;
+
                     setItemsAsCelsium(temp, feels_like, humidity, weatherDesc, windSpeed, icon, inputFieldElement.value);
                     inputFieldElement.value = '';
 
@@ -38,7 +38,6 @@ async function checkDataForTheCurrentCity(degree) {
                     console.log(error);
                     alert('Invalid city! Try again..');
                     clearElements();
-
                 }
                 break;
 
