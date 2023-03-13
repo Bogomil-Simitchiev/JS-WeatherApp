@@ -20,11 +20,11 @@
     <div id="weatherApp-container">
       <h1>Check the weather forecast</h1>
     </div>
-    <section class="section-container">
+    <section class="section-container" id="app-section">
       <div class="container py-5 h-100">
 
         <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-md-8 col-lg-6 col-xl-4">
+          <div id="containerInfo">
             <div class="input-group rounded mb-3">
 
               <input id="msg" type="text" class="form-control" name="msg" placeholder="Enter city">
@@ -45,16 +45,16 @@
               </div>
             </div>
 
-            <div class="card shadow-0 border">
+            <div class="card shadow-0 border" id="field">
               <div class="card-body p-4">
 
-                <h4 class="mb-1 sfw-normal">New York, US</h4>
-                <p class="mb-2">Current temperature: <strong>5.42°C</strong></p>
-                <p>Feels like: <strong>4.37°C</strong></p>
-                <p>Max: <strong>6.11°C</strong>, Min: <strong>3.89°C</strong></p>
-
+                <h3 class="mb-1 sfw-normal" style="font-weight: bold;">City: <span id="city"></span></h3>
+                <p class="mb-2">Current temperature: <strong id="temp"></strong></p>
+                <p>Feels like: <strong id="feelsLike"></strong></p>
+                <p>Wind speed: <strong id="windSpeed"></strong>, Humidity: <strong id="humidity"></strong></p>
                 <div class="d-flex flex-row align-items-center">
-                  <p class="mb-0 me-4">Scattered Clouds</p>
+                  <img src="" alt="" id="imgIcon">
+                  <p class="mb-0 me-4" id="weather"></p>
                   <i class="fas fa-cloud fa-3x" style="color: #eee;"></i>
                 </div>
 
@@ -68,7 +68,7 @@
   </div>
 
   </section>
-  <script src="./src/app.js"></script>
+  <script src="./src/app.js" type="module"></script>
 </body>
 
 </html>

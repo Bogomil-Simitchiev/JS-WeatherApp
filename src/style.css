@@ -1,14 +1,16 @@
 #app-container {
     box-shadow: 5px 10px black;
     margin: auto;
-    width: 50%;
+    width: 60%;
     border: 3px solid green;
     padding: 10px;
     text-align: center;
+    font-size: large;
+    border-radius: 25px;
 }
-
 .container {
-    background-color: bisque;
+    background-color:antiquewhite;
+    border-radius: 25px;
 }
 
 #btn {
@@ -17,4 +19,12 @@
 
 #msg {
     height: 40px;
+    font-size:medium;
+}
+
+#field {
+    background-color:rgb(97, 255, 97);
+}
+#containerInfo{
+    width: 85%;
 }
